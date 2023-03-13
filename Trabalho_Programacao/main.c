@@ -105,7 +105,6 @@ int main()
         printf("Selecione uma opcao valida !\n");
     }
     return 0;
-
     */
     meios = inserirMeio(meios, 1, "trotinete", 67, 87, 31.31);
     meios = inserirMeio(meios, 2, "bicicleta", 100, 47, 14);
@@ -113,7 +112,7 @@ int main()
     listarMeiosPorAutonomia(meios);
     //guardarMeios(meios);
 
-    //editarMeios(meios, 1);
+    editarMeios(meios, 1);
     
     //clientes = inserirCliente(clientes, "Tiago", "Rua das Flores", 18, 253793866, 938710984, "1234");
     //editarCliente(clientes, "Tiago");
