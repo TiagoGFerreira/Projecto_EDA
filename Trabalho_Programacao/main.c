@@ -10,7 +10,7 @@ void menuprincipal() {
     meios = lerMeios();
     clientes = lerCliente();
     gestores = lerGestor();
-    int resposta, id, idcli, idges, carga, autonomia, idade, nif , telemovel, respostacli, respostages , idmeio, aluguer;
+    int resposta, id, idcli, idges, carga, autonomia, idade, nif, telemovel, respostacli, respostages, idmeio, aluguer;
     char tipo[50], morada[50], password[50], nome[50], tipodemobilidade[50], localizacao[50], nomecli[50], passwordcli[50], nomeges[50], passwordges[50];
     float custo;
     printf("***************  MENU ***************\n");
@@ -55,7 +55,6 @@ void menuprincipal() {
                 editarCliente(clientes, id);
                 guardarClientes(clientes);
                 menuprincipal();
-                
 
             case 2:
                 listarMeios(meios);
@@ -72,14 +71,14 @@ void menuprincipal() {
             case 5:
                 printf("ID do meio que pretende alugar: ");
                 scanf("%d", &idmeio);
-                AlugarMeios(meios,idmeio);
+                AlugarMeios(meios, idmeio);
                 guardarMeios(meios);
                 menuprincipal();
 
             case 6:
                 printf("ID do meio que pretende desalugar: ");
                 scanf("%d", &idmeio);
-                DesalugarMeios(meios,idmeio);
+                DesalugarMeios(meios, idmeio);
                 guardarMeios(meios);
                 menuprincipal();
 
@@ -154,7 +153,7 @@ void menuprincipal() {
                 printf("0 - Nao alugado / 1 - Alugado\n");
                 printf("Aluguer: ");
                 scanf("%d", &aluguer);
-                inserirMeio(meios, idmeio, tipodemobilidade, carga, autonomia, custo, localizacao, aluguer);
+                meios = inserirMeio(meios, idmeio, tipodemobilidade, carga, autonomia, custo, localizacao, aluguer);
                 guardarMeios(meios);
                 menuprincipal();
 
@@ -174,8 +173,7 @@ void menuprincipal() {
             case 4:
                 printf("ID do meio que pretende verificar a sua existencia: \n");
                 scanf("%d", &idmeio);
-                if (existeMeio(meios, idmeio))
-                {
+                if (existeMeio(meios, idmeio)) {
                     printf("O meio com o id %d existe\n", idmeio);
                 }
                 else {
@@ -186,10 +184,9 @@ void menuprincipal() {
             case 5:
                 printf("ID do meio que pretende remover: ");
                 scanf("%d", &idmeio);
-                removerMeio(meios, idmeio);
+                meios = removerMeio(meios, idmeio);
                 guardarMeios(meios);
                 menuprincipal();
-
 
             case 6:
                 printf("Meios disponiveis para alugar:\n");
@@ -225,7 +222,7 @@ void menuprincipal() {
             case 11:
                 printf("Inserir cliente:\n");
                 printf("ID: "),
-                scanf("%d", &idcli);
+                    scanf("%d", &idcli);
                 printf("Nome: ");
                 getchar(); // Clear the input buffer
                 gets(nomecli);
@@ -259,8 +256,7 @@ void menuprincipal() {
             case 14:
                 printf("ID do cliente que pretende verificar a sua existencia: ");
                 scanf("%d", &idcli);
-                if (existeCliente(clientes, idcli))
-                {
+                if (existeCliente(clientes, idcli)) {
                     printf("O cliente com o id %d existe\n", idcli);
                 }
                 else {
@@ -308,8 +304,7 @@ void menuprincipal() {
             case 19:
                 printf("ID do gestor que pretende verificar a sua existencia: ");
                 scanf("%d", &idges);
-                if (existeGestor(gestores,idges))
-                {
+                if (existeGestor(gestores, idges)) {
                     printf("O gestor com o id %d existe\n", idges);
                 }
                 else {
@@ -328,7 +323,7 @@ void menuprincipal() {
                 printf("Selecione uma opcao valida !\n");
             }
             return 0;
-            
+
         }
         else printf("Credenciais invalidas\n");
         break;
@@ -336,7 +331,7 @@ void menuprincipal() {
     case 3: {
         printf("*************** CLIENTE ***************\n");
         printf("ID: "),
-        scanf("%d", &id);
+            scanf("%d", &id);
         printf("Nome: ");
         getchar(); // Clear the input buffer
         gets(nome);
@@ -352,7 +347,7 @@ void menuprincipal() {
         printf("Password: ");
         getchar(); // Clear the input buffer
         gets(password);
-        clientes = inserirCliente(clientes, id,  nome, morada, idade, nif, telemovel, password);
+        clientes = inserirCliente(clientes, id, nome, morada, idade, nif, telemovel, password);
         guardarClientes(clientes);
         menuprincipal();
     }
@@ -430,31 +425,36 @@ void menucliente()
     return 0;
 }
 */
-    
 
-int main()
-{
+int main() {
     Cliente* clientes = NULL;
     Gestor* gestores = NULL;
     Meio* meios = NULL;
 
-    menuprincipal();
+    int idmeio, carga, autonomia, aluguer;
+    float custo;
+    char tipodemobilidade[50],  localizacao[50];
 
+    menuprincipal();
+    
+    
+
+    //meios = lerMeios();
+    //inserirMeio(meios, 4, "tipodemobilidade", 45, 50, 60.1, "localizacao", 0);
+    //listarMeios(meios);
     //clientes = lerCliente();
     //clientes = inserirCliente(clientes, 1, "Tiago", "Rua das Flores", 18, 253793866, 938710984, "1234");
     //clientes = inserirCliente(clientes, 2, "Ferreira", "Rua das Flores", 18, 253793866, 938710984, "1234");
     //listarCliente(clientes);
-   
+
     /*
     gestores = inserirGestor(gestores, 9, "tiago", 222, 222, "passs");
     gestores = inserirGestor(gestores, 19, "tiago", 222, 222, "passs");
     listarGestor(gestores);
     removerGestor(gestores, 9);
     listarGestor(gestores);
-    
-    gestores = inserirMeios(gestores, 19, "tiago", 222, 222, "passs");
-    guardarMeios(meios);
-    meios = lerMeios();
+
+   
     listarMeios(meios);
     removerMeio(meios, 1);
     guardarMeios(meios);
@@ -466,10 +466,8 @@ int main()
     //listarMeios(meios);
     //guardarMeios(meios);
     //clientes = inserirCliente(clientes, 1, "Tiago", "Rua das Flores", 18, 253793866, 938710984, "1234");
-   //clientes = inserirCliente(clientes, 2, "Ferreira", "Rua das Flores", 18, 253793866, 938710984, "1234");
-   //listarCliente(clientes);
+    //clientes = inserirCliente(clientes, 2, "Ferreira", "Rua das Flores", 18, 253793866, 938710984, "1234");
+    //listarCliente(clientes);
     //menuprincipal();
 
-    
-    
 }

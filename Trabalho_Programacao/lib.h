@@ -1,19 +1,19 @@
 #include <stdio.h>
 // Remover um meio a partir do seu código
 
-typedef struct registoMeio
-{int id; // código do meio de mobilidade elétrica
-char tipodemobilidade[50];
-int carga;
-int autonomia;
-float custo;
-char localizacao[50];
-int aluguer;
- struct registoMeio* seguinte; // endereço de memória para uma struct registo
-} Meio;
+typedef struct registoMeio {
+	int id; // código do meio de mobilidade elétrica
+	char tipodemobilidade[50];
+	int carga;
+	int autonomia;
+	float custo;
+	char localizacao[50];
+	int aluguer;
+	struct registoMeio* seguinte; // endereço de memória para uma struct registo
+}
+Meio;
 
-typedef struct registoCliente
-{
+typedef struct registoCliente {
 	int id;
 	char nome[50];
 	char morada[50];
@@ -22,31 +22,31 @@ typedef struct registoCliente
 	int telemovel;
 	char password[50];
 	struct registoCliente* seguinte;
-	struct registoMeio* aluguer;// endereço de memória para uma struct registo
-} Cliente;
+	struct registoMeio* aluguer; // endereço de memória para uma struct registo
+}
+Cliente;
 
-typedef struct registoGestor
-{
+typedef struct registoGestor {
 	int id;
 	char nome[50];
 	int nif;
 	int telemovel;
 	char password[50];
 	struct registoGestor* seguinte; // endereço de memória para uma struct registo
-} Gestor;
-
+}
+Gestor;
 
 // Inserção de um novo registo
 Meio* inserirMeio(Meio* inicio, int id, char tipo[], int carga, int autonomia, float custo, char localizacao[], int aluguer);
 
 // listar na consola o conteúdo da lista ligada
-void listarMeios(Meio* inicio); 
+void listarMeios(Meio* inicio);
 
 // Determinar existência do 'codigo' na lista ligada 'inicio'
-int existeMeio(Meio* inicio, int id); 
+int existeMeio(Meio* inicio, int id);
 
 // Remover um meio a partir do seu código
-Meio* removerMeio(Meio* inicio, int id); 
+Meio* removerMeio(Meio* inicio, int id);
 
 Meio* lerMeios();
 
@@ -75,7 +75,6 @@ Cliente* removerCliente(Cliente* inicio, int id);
 void editarCliente(struct registoCliente* lista, int id);
 
 void guardarClientes(Cliente* inicio);
-
 
 Gestor* inserirGestor(Gestor* inicio, int id, char nome[], int contribuinte, int tele, char password[]);
 
