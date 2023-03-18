@@ -1,0 +1,7 @@
+﻿  fase1.c
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(173,4): warning C4013: 'gets' undefined; assuming extern returning int
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(282): warning C4715: 'verificaCliente': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(263): warning C4715: 'inserirCliente': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(394): warning C4715: 'inserirGestor': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(518): warning C4715: 'verificaGestor': not all control paths return a value
+  Trabalho_Programacao.vcxproj -> C:\C\EDA\Trabalho_Programacao\x64\Debug\Trabalho_Programacao.exe

@@ -1,1 +1,4 @@
-Nome - Tiago , Morada - Rua Senhora da Guia , Idade -  18 , NIF - 253793866 , Telemovel - 938710984, Password - tiago4567
+5;Maria;ua da Guia;21;234567872;91872623;12345
+1;Tiago;ua das Flores;28;253793866;913710984;1234
+2;Miguel Joao;Rua da avenida;29;9192821;918181;1
+7;tt;rua senhora da guia;191;82;98222;1

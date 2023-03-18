@@ -1,2 +1,3 @@
-ID - 2  Tipo de Mobilidade - bicicleta Carga -  100 Autonomia - 47 Custo - 14.00
-ID - 1  Tipo de Mobilidade - trotinete Carga -  67 Autonomia - 35 Custo - 31.31
+3;comboio;40;70;100.00;t-t-e;0
+3;comboio;40;70;100.00;t-t-e;0
+3;comboio;40;70;100.00;t-t-e;0
