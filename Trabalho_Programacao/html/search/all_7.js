@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['id_0',['id',['../structregisto_meio.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'registoMeio::id()'],['../structregisto_cliente.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'registoCliente::id()'],['../structregisto_gestor.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'registoGestor::id()']]],
+  ['idade_1',['idade',['../structregisto_cliente.html#ad5ea2e19b7deb827930edce70e13e3b8',1,'registoCliente']]],
+  ['inserircliente_2',['inserirCliente',['../fase1_8c.html#adb59b19f75a390b4a980fe39b55754f8',1,'inserirCliente(Cliente *inicio, int id, char nome[], char mor[], int ida, int contribuinte, int tele, float saldo, char pass[]):&#160;fase1.c'],['../lib_8h.html#a139813ff3443d29e359389d4165a9ea7',1,'inserirCliente(Cliente *inicio, int id, char nome[], char mor[], int ida, int nif, int tele, float saldo, char pass[]):&#160;fase1.c']]],
+  ['inserirgestor_3',['inserirGestor',['../fase1_8c.html#af8c0ef4388086155e4c428a22cac6e19',1,'inserirGestor(Gestor *inicio, int id, char nome[], int contribuinte, int tele, char password[]):&#160;fase1.c'],['../lib_8h.html#af8c0ef4388086155e4c428a22cac6e19',1,'inserirGestor(Gestor *inicio, int id, char nome[], int contribuinte, int tele, char password[]):&#160;fase1.c']]],
+  ['inserirmeio_4',['inserirMeio',['../fase1_8c.html#abb68a0e7ec68e659eb1992054349491e',1,'inserirMeio(Meio *inicio, int id, char tipo[], int carga, int autonomia, float custo, char localizacao[], int aluguer):&#160;fase1.c'],['../lib_8h.html#abb68a0e7ec68e659eb1992054349491e',1,'inserirMeio(Meio *inicio, int id, char tipo[], int carga, int autonomia, float custo, char localizacao[], int aluguer):&#160;fase1.c']]]
+];

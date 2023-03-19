@@ -1,0 +1,272 @@
+\hypertarget{lib_8h}{}\doxysection{lib.\+h File Reference}
+\label{lib_8h}\index{lib.h@{lib.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}}
+\item 
+struct \mbox{\hyperlink{structregisto_cliente}{registo\+Cliente}}
+\item 
+struct \mbox{\hyperlink{structregisto_gestor}{registo\+Gestor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} \mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}}
+\item 
+typedef struct \mbox{\hyperlink{structregisto_cliente}{registo\+Cliente}} \mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}}
+\item 
+typedef struct \mbox{\hyperlink{structregisto_gestor}{registo\+Gestor}} \mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$ \mbox{\hyperlink{lib_8h_abb68a0e7ec68e659eb1992054349491e}{inserir\+Meio}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio, int id, char tipo\mbox{[}$\,$\mbox{]}, int carga, int autonomia, float custo, char localizacao\mbox{[}$\,$\mbox{]}, int aluguer)
+\item 
+void \mbox{\hyperlink{lib_8h_a87feb05b64a61869d1c760806b221333}{listar\+Meios}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio)
+\item 
+int \mbox{\hyperlink{lib_8h_a629b040130e6146c98cbae5cdbc73bee}{existe\+Meio}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio, int id)
+\item 
+\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$ \mbox{\hyperlink{lib_8h_aefe0bc9f4fb01f2285978a74b6a51b08}{remover\+Meio}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio, int id)
+\item 
+\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$ \mbox{\hyperlink{lib_8h_aacbc0a630143b0ef88459e973a6bfbe5}{ler\+Meios}} ()
+\item 
+void \mbox{\hyperlink{lib_8h_a7c164c710792c09b21f68160060830a2}{Meios\+Para\+Alugar}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio)
+\item 
+void \mbox{\hyperlink{lib_8h_a5251ff71dc5ec2c142975fbffe009b6a}{Alugar\+Meios}} (struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} $\ast$lista, int id)
+\item 
+void \mbox{\hyperlink{lib_8h_a76a7b80a5c72bad7705f6c3ced01cf1f}{Desalugar\+Meios}} (struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} $\ast$lista, int id)
+\item 
+void \mbox{\hyperlink{lib_8h_a5b6eacfaf9bfe7d87b060f26669ea9e1}{editar\+Meios}} (struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} $\ast$lista, int id)
+\item 
+void \mbox{\hyperlink{lib_8h_a8925eb524947efc6f7d745561a4c0d9f}{guardar\+Meios}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio)
+\item 
+\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$ \mbox{\hyperlink{lib_8h_a1ef36cc03ed3cbe9b1fc5f4681692a7d}{ler\+Cliente}} ()
+\item 
+\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$ \mbox{\hyperlink{lib_8h_a139813ff3443d29e359389d4165a9ea7}{inserir\+Cliente}} (\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$inicio, int id, char nome\mbox{[}$\,$\mbox{]}, char mor\mbox{[}$\,$\mbox{]}, int ida, int nif, int tele, float saldo, char pass\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{lib_8h_afe34e6c914fcde548a85bc5467081105}{listar\+Cliente}} (\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$inicio)
+\item 
+int \mbox{\hyperlink{lib_8h_a0085758bea8a2c0c1aa749ff416461b7}{existe\+Cliente}} (\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$inicio, int id)
+\item 
+int \mbox{\hyperlink{lib_8h_adfe2b227466fb69a886a57630f750dba}{verifica\+Cliente}} (\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$inicio, int id, char nome\mbox{[}$\,$\mbox{]}, char password\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$ \mbox{\hyperlink{lib_8h_abde82748ecdc17a64062e4f34076ec48}{remover\+Cliente}} (\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$inicio, int id)
+\item 
+void \mbox{\hyperlink{lib_8h_a8c17ed410f0446aeae4918fabf27c6c1}{editar\+Cliente}} (struct \mbox{\hyperlink{structregisto_cliente}{registo\+Cliente}} $\ast$lista, int id)
+\item 
+void \mbox{\hyperlink{lib_8h_a71476a953df760aa18658438e51c1772}{guardar\+Clientes}} (\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$inicio)
+\item 
+\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$ \mbox{\hyperlink{lib_8h_af8c0ef4388086155e4c428a22cac6e19}{inserir\+Gestor}} (\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$inicio, int id, char nome\mbox{[}$\,$\mbox{]}, int contribuinte, int tele, char password\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$ \mbox{\hyperlink{lib_8h_a006b1bfe5f29a018b5e0a450a0ad7ea8}{ler\+Gestor}} ()
+\item 
+void \mbox{\hyperlink{lib_8h_a2426c3179d14bffb189605face86aafc}{listar\+Gestor}} (\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$inicio)
+\item 
+int \mbox{\hyperlink{lib_8h_aff4625d37fffde8f6897a810ef16fec6}{existe\+Gestor}} (\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$inicio, int id)
+\item 
+\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$ \mbox{\hyperlink{lib_8h_a0eec00437ca8a857e4b60850fd4d1b4d}{remover\+Gestor}} (\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$inicio, int id)
+\item 
+void \mbox{\hyperlink{lib_8h_af84f716dd128df5ce45e1b3fea3bc426}{editar\+Gestor}} (struct \mbox{\hyperlink{structregisto_gestor}{registo\+Gestor}} $\ast$lista, int id)
+\item 
+void \mbox{\hyperlink{lib_8h_a39c063936162035da44af5ace075ff3f}{guardar\+Gestores}} (\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$inicio)
+\item 
+int \mbox{\hyperlink{lib_8h_ab7da02a7f9d0d965ec47a37ecf850816}{verifica\+Gestor}} (\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$inicio, int id, char nome\mbox{[}$\,$\mbox{]}, char password\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{lib_8h_a28e682234de69bbfe40d6830704af895}{listar\+Meios\+Por\+Autonomia}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio)
+\item 
+void \mbox{\hyperlink{lib_8h_a3cee146a0843828fa9c775441ae9e1d6}{verifica\+Localizacao}} (\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$inicio, char localizacao\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}\label{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}} 
+\index{lib.h@{lib.h}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{Cliente}{Cliente}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structregisto_cliente}{registo\+Cliente}} \mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}}}
+
+\mbox{\Hypertarget{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}\label{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}} 
+\index{lib.h@{lib.h}!Gestor@{Gestor}}
+\index{Gestor@{Gestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{Gestor}{Gestor}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structregisto_gestor}{registo\+Gestor}} \mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}}}
+
+\mbox{\Hypertarget{lib_8h_ac364e4a0444edd49149199514bc9dd4c}\label{lib_8h_ac364e4a0444edd49149199514bc9dd4c}} 
+\index{lib.h@{lib.h}!Meio@{Meio}}
+\index{Meio@{Meio}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{Meio}{Meio}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} \mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{lib_8h_a5251ff71dc5ec2c142975fbffe009b6a}\label{lib_8h_a5251ff71dc5ec2c142975fbffe009b6a}} 
+\index{lib.h@{lib.h}!AlugarMeios@{AlugarMeios}}
+\index{AlugarMeios@{AlugarMeios}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{AlugarMeios()}{AlugarMeios()}}
+{\footnotesize\ttfamily void Alugar\+Meios (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} $\ast$}]{lista,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a76a7b80a5c72bad7705f6c3ced01cf1f}\label{lib_8h_a76a7b80a5c72bad7705f6c3ced01cf1f}} 
+\index{lib.h@{lib.h}!DesalugarMeios@{DesalugarMeios}}
+\index{DesalugarMeios@{DesalugarMeios}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{DesalugarMeios()}{DesalugarMeios()}}
+{\footnotesize\ttfamily void Desalugar\+Meios (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} $\ast$}]{lista,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a8c17ed410f0446aeae4918fabf27c6c1}\label{lib_8h_a8c17ed410f0446aeae4918fabf27c6c1}} 
+\index{lib.h@{lib.h}!editarCliente@{editarCliente}}
+\index{editarCliente@{editarCliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{editarCliente()}{editarCliente()}}
+{\footnotesize\ttfamily void editar\+Cliente (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structregisto_cliente}{registo\+Cliente}} $\ast$}]{lista,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_af84f716dd128df5ce45e1b3fea3bc426}\label{lib_8h_af84f716dd128df5ce45e1b3fea3bc426}} 
+\index{lib.h@{lib.h}!editarGestor@{editarGestor}}
+\index{editarGestor@{editarGestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{editarGestor()}{editarGestor()}}
+{\footnotesize\ttfamily void editar\+Gestor (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structregisto_gestor}{registo\+Gestor}} $\ast$}]{lista,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a5b6eacfaf9bfe7d87b060f26669ea9e1}\label{lib_8h_a5b6eacfaf9bfe7d87b060f26669ea9e1}} 
+\index{lib.h@{lib.h}!editarMeios@{editarMeios}}
+\index{editarMeios@{editarMeios}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{editarMeios()}{editarMeios()}}
+{\footnotesize\ttfamily void editar\+Meios (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structregisto_meio}{registo\+Meio}} $\ast$}]{lista,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a0085758bea8a2c0c1aa749ff416461b7}\label{lib_8h_a0085758bea8a2c0c1aa749ff416461b7}} 
+\index{lib.h@{lib.h}!existeCliente@{existeCliente}}
+\index{existeCliente@{existeCliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{existeCliente()}{existeCliente()}}
+{\footnotesize\ttfamily int existe\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_aff4625d37fffde8f6897a810ef16fec6}\label{lib_8h_aff4625d37fffde8f6897a810ef16fec6}} 
+\index{lib.h@{lib.h}!existeGestor@{existeGestor}}
+\index{existeGestor@{existeGestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{existeGestor()}{existeGestor()}}
+{\footnotesize\ttfamily int existe\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a629b040130e6146c98cbae5cdbc73bee}\label{lib_8h_a629b040130e6146c98cbae5cdbc73bee}} 
+\index{lib.h@{lib.h}!existeMeio@{existeMeio}}
+\index{existeMeio@{existeMeio}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{existeMeio()}{existeMeio()}}
+{\footnotesize\ttfamily int existe\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a71476a953df760aa18658438e51c1772}\label{lib_8h_a71476a953df760aa18658438e51c1772}} 
+\index{lib.h@{lib.h}!guardarClientes@{guardarClientes}}
+\index{guardarClientes@{guardarClientes}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{guardarClientes()}{guardarClientes()}}
+{\footnotesize\ttfamily void guardar\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a39c063936162035da44af5ace075ff3f}\label{lib_8h_a39c063936162035da44af5ace075ff3f}} 
+\index{lib.h@{lib.h}!guardarGestores@{guardarGestores}}
+\index{guardarGestores@{guardarGestores}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{guardarGestores()}{guardarGestores()}}
+{\footnotesize\ttfamily void guardar\+Gestores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a8925eb524947efc6f7d745561a4c0d9f}\label{lib_8h_a8925eb524947efc6f7d745561a4c0d9f}} 
+\index{lib.h@{lib.h}!guardarMeios@{guardarMeios}}
+\index{guardarMeios@{guardarMeios}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{guardarMeios()}{guardarMeios()}}
+{\footnotesize\ttfamily void guardar\+Meios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a139813ff3443d29e359389d4165a9ea7}\label{lib_8h_a139813ff3443d29e359389d4165a9ea7}} 
+\index{lib.h@{lib.h}!inserirCliente@{inserirCliente}}
+\index{inserirCliente@{inserirCliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{inserirCliente()}{inserirCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$ inserir\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$}]{inicio,  }\item[{int}]{id,  }\item[{char}]{nome\mbox{[}$\,$\mbox{]},  }\item[{char}]{mor\mbox{[}$\,$\mbox{]},  }\item[{int}]{ida,  }\item[{int}]{nif,  }\item[{int}]{tele,  }\item[{float}]{saldo,  }\item[{char}]{pass\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_af8c0ef4388086155e4c428a22cac6e19}\label{lib_8h_af8c0ef4388086155e4c428a22cac6e19}} 
+\index{lib.h@{lib.h}!inserirGestor@{inserirGestor}}
+\index{inserirGestor@{inserirGestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{inserirGestor()}{inserirGestor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$ inserir\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$}]{inicio,  }\item[{int}]{id,  }\item[{char}]{nome\mbox{[}$\,$\mbox{]},  }\item[{int}]{contribuinte,  }\item[{int}]{tele,  }\item[{char}]{password\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_abb68a0e7ec68e659eb1992054349491e}\label{lib_8h_abb68a0e7ec68e659eb1992054349491e}} 
+\index{lib.h@{lib.h}!inserirMeio@{inserirMeio}}
+\index{inserirMeio@{inserirMeio}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{inserirMeio()}{inserirMeio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$ inserir\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio,  }\item[{int}]{id,  }\item[{char}]{tipo\mbox{[}$\,$\mbox{]},  }\item[{int}]{carga,  }\item[{int}]{autonomia,  }\item[{float}]{custo,  }\item[{char}]{localizacao\mbox{[}$\,$\mbox{]},  }\item[{int}]{aluguer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a1ef36cc03ed3cbe9b1fc5f4681692a7d}\label{lib_8h_a1ef36cc03ed3cbe9b1fc5f4681692a7d}} 
+\index{lib.h@{lib.h}!lerCliente@{lerCliente}}
+\index{lerCliente@{lerCliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{lerCliente()}{lerCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$ ler\+Cliente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a006b1bfe5f29a018b5e0a450a0ad7ea8}\label{lib_8h_a006b1bfe5f29a018b5e0a450a0ad7ea8}} 
+\index{lib.h@{lib.h}!lerGestor@{lerGestor}}
+\index{lerGestor@{lerGestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{lerGestor()}{lerGestor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$ ler\+Gestor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_aacbc0a630143b0ef88459e973a6bfbe5}\label{lib_8h_aacbc0a630143b0ef88459e973a6bfbe5}} 
+\index{lib.h@{lib.h}!lerMeios@{lerMeios}}
+\index{lerMeios@{lerMeios}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{lerMeios()}{lerMeios()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$ ler\+Meios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_afe34e6c914fcde548a85bc5467081105}\label{lib_8h_afe34e6c914fcde548a85bc5467081105}} 
+\index{lib.h@{lib.h}!listarCliente@{listarCliente}}
+\index{listarCliente@{listarCliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{listarCliente()}{listarCliente()}}
+{\footnotesize\ttfamily void listar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a2426c3179d14bffb189605face86aafc}\label{lib_8h_a2426c3179d14bffb189605face86aafc}} 
+\index{lib.h@{lib.h}!listarGestor@{listarGestor}}
+\index{listarGestor@{listarGestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{listarGestor()}{listarGestor()}}
+{\footnotesize\ttfamily void listar\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a87feb05b64a61869d1c760806b221333}\label{lib_8h_a87feb05b64a61869d1c760806b221333}} 
+\index{lib.h@{lib.h}!listarMeios@{listarMeios}}
+\index{listarMeios@{listarMeios}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{listarMeios()}{listarMeios()}}
+{\footnotesize\ttfamily void listar\+Meios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a28e682234de69bbfe40d6830704af895}\label{lib_8h_a28e682234de69bbfe40d6830704af895}} 
+\index{lib.h@{lib.h}!listarMeiosPorAutonomia@{listarMeiosPorAutonomia}}
+\index{listarMeiosPorAutonomia@{listarMeiosPorAutonomia}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{listarMeiosPorAutonomia()}{listarMeiosPorAutonomia()}}
+{\footnotesize\ttfamily void listar\+Meios\+Por\+Autonomia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a7c164c710792c09b21f68160060830a2}\label{lib_8h_a7c164c710792c09b21f68160060830a2}} 
+\index{lib.h@{lib.h}!MeiosParaAlugar@{MeiosParaAlugar}}
+\index{MeiosParaAlugar@{MeiosParaAlugar}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{MeiosParaAlugar()}{MeiosParaAlugar()}}
+{\footnotesize\ttfamily void Meios\+Para\+Alugar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_abde82748ecdc17a64062e4f34076ec48}\label{lib_8h_abde82748ecdc17a64062e4f34076ec48}} 
+\index{lib.h@{lib.h}!removerCliente@{removerCliente}}
+\index{removerCliente@{removerCliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{removerCliente()}{removerCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$ remover\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a0eec00437ca8a857e4b60850fd4d1b4d}\label{lib_8h_a0eec00437ca8a857e4b60850fd4d1b4d}} 
+\index{lib.h@{lib.h}!removerGestor@{removerGestor}}
+\index{removerGestor@{removerGestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{removerGestor()}{removerGestor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$ remover\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_aefe0bc9f4fb01f2285978a74b6a51b08}\label{lib_8h_aefe0bc9f4fb01f2285978a74b6a51b08}} 
+\index{lib.h@{lib.h}!removerMeio@{removerMeio}}
+\index{removerMeio@{removerMeio}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{removerMeio()}{removerMeio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$ remover\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_adfe2b227466fb69a886a57630f750dba}\label{lib_8h_adfe2b227466fb69a886a57630f750dba}} 
+\index{lib.h@{lib.h}!verificaCliente@{verificaCliente}}
+\index{verificaCliente@{verificaCliente}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{verificaCliente()}{verificaCliente()}}
+{\footnotesize\ttfamily int verifica\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}} $\ast$}]{inicio,  }\item[{int}]{id,  }\item[{char}]{nome\mbox{[}$\,$\mbox{]},  }\item[{char}]{password\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_ab7da02a7f9d0d965ec47a37ecf850816}\label{lib_8h_ab7da02a7f9d0d965ec47a37ecf850816}} 
+\index{lib.h@{lib.h}!verificaGestor@{verificaGestor}}
+\index{verificaGestor@{verificaGestor}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{verificaGestor()}{verificaGestor()}}
+{\footnotesize\ttfamily int verifica\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}} $\ast$}]{inicio,  }\item[{int}]{id,  }\item[{char}]{nome\mbox{[}$\,$\mbox{]},  }\item[{char}]{password\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{lib_8h_a3cee146a0843828fa9c775441ae9e1d6}\label{lib_8h_a3cee146a0843828fa9c775441ae9e1d6}} 
+\index{lib.h@{lib.h}!verificaLocalizacao@{verificaLocalizacao}}
+\index{verificaLocalizacao@{verificaLocalizacao}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{verificaLocalizacao()}{verificaLocalizacao()}}
+{\footnotesize\ttfamily void verifica\+Localizacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}} $\ast$}]{inicio,  }\item[{char}]{localizacao\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
