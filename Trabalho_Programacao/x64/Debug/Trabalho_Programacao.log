@@ -1,21 +1,10 @@
 ﻿  fase1.c
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(151,9): warning C4013: 'gets' undefined; assuming extern returning int
-  main.c
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(35,9): warning C4013: 'gets' undefined; assuming extern returning int
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(93,21): warning C4098: 'menuprincipal': 'void' function returning a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(96,17): warning C4098: 'menuprincipal': 'void' function returning a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(325,21): warning C4098: 'menuprincipal': 'void' function returning a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(14,10): warning C4101: 'tipo': unreferenced local variable
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(434,9): warning C4101: 'idmeio': unreferenced local variable
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(435,11): warning C4101: 'custo': unreferenced local variable
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(434,35): warning C4101: 'aluguer': unreferenced local variable
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(436,10): warning C4101: 'tipodemobilidade': unreferenced local variable
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(434,24): warning C4101: 'autonomia': unreferenced local variable
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(434,17): warning C4101: 'carga': unreferenced local variable
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(436,33): warning C4101: 'localizacao': unreferenced local variable
-  Generating Code...
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(346): warning C4715: 'inserirGestor': not all control paths return a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(247): warning C4715: 'verificaCliente': not all control paths return a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(232): warning C4715: 'inserirCliente': not all control paths return a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(456): warning C4715: 'verificaGestor': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(181,13): warning C4013: 'gets' undefined; assuming extern returning int
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(346,19): warning C4476: 'scanf' : unknown type field character '.' in format specifier
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(346,27): warning C4474: 'scanf' : too many arguments passed for format string
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(346,27): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(259): warning C4715: 'inserirCliente': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(278): warning C4715: 'verificaCliente': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(392): warning C4715: 'inserirGestor': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(524): warning C4715: 'verificaGestor': not all control paths return a value
   Trabalho_Programacao.vcxproj -> C:\C\EDA\Trabalho_Programacao\x64\Debug\Trabalho_Programacao.exe

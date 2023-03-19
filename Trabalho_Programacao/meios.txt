@@ -1,3 +1,5 @@
-6;bike;77;77;77.00;bikeee;1
-3;comboio;40;70;100.00;t-t-e;1
-1;tt;55;55;55.00;tt;1
+1;trotinete;100;67;300.00;empregar.decorações.assando;0
+2;bicicleta;40;70;45.60;vazar.rodeiam.esticando;1
+3;trotinete elétrica;20;50;300.00;empregar.decorações.assando;1
+4;bicicleta;56;45;47.01;empregar.decorações.assando;0
+5;bicicleta;13;15;36.40;garrar.rasgando.falava;1
