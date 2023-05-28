@@ -9,4 +9,3 @@ chance.acusar.obter;entrelinha.resolvidas.fixo;10.00
 boto.acenou.letivo;miudo.leites.salgados;5.00
 boto.acenou.letivo;entrelinha.resolvidas.fixo;20.00
 boto.acenou.letivo;aprovaram.lenco.luz;10.00
-teste1;teste1;30.00
