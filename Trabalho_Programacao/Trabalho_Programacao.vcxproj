@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="fase1.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="Source.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib.h" />

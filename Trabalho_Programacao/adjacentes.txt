@@ -1,0 +1,12 @@
+aprovaram.lenco.luz;chance.acusar.obter;50.00
+miudo.leites.salgados;devorar.ouca.mansos;10.00
+blusona.apoios.grosso;chance.acusar.obter;10.00
+blusona.apoios.grosso;boto.acenou.letivo;10.00
+completam.torroes.zeloso;blusona.apoios.grosso;5.00
+devorar.ouca.mansos;completam.torroes.zeloso;50.00
+entrelinha.resolvidas.fixo;miudo.leites.salgados;5.00
+chance.acusar.obter;entrelinha.resolvidas.fixo;10.00
+boto.acenou.letivo;miudo.leites.salgados;5.00
+boto.acenou.letivo;entrelinha.resolvidas.fixo;20.00
+boto.acenou.letivo;aprovaram.lenco.luz;10.00
+teste1;teste1;30.00

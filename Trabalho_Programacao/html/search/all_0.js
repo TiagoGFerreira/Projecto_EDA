@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_5fcrt_5fsecure_5fno_5fwarnings_0',['_CRT_SECURE_NO_WARNINGS',['../fase1_8c.html#af08ec37a8c99d747fb60fa15bc28678b',1,'_CRT_SECURE_NO_WARNINGS():&#160;fase1.c'],['../main_8c.html#af08ec37a8c99d747fb60fa15bc28678b',1,'_CRT_SECURE_NO_WARNINGS():&#160;main.c']]]
+  ['camiao_0',['Camiao',['../struct_camiao.html',1,'']]],
+  ['caminho_1',['Caminho',['../struct_caminho.html',1,'']]],
+  ['clientegrafo_2',['ClienteGrafo',['../struct_cliente_grafo.html',1,'']]]
 ];

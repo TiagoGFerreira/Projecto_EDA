@@ -1,0 +1,5 @@
+2;miudo.leites.salgados
+3;devorar.ouca.mansos
+5;entrelinha.resolvidas.fixo
+1;chance.acusar.obter
+4;boto.acenou.letivo

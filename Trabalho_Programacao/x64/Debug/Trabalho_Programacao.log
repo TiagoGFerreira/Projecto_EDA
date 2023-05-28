@@ -1,10 +1,25 @@
 ﻿  fase1.c
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(181,13): warning C4013: 'gets' undefined; assuming extern returning int
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(346,19): warning C4476: 'scanf' : unknown type field character '.' in format specifier
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(346,27): warning C4474: 'scanf' : too many arguments passed for format string
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(346,27): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(259): warning C4715: 'inserirCliente': not all control paths return a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(278): warning C4715: 'verificaCliente': not all control paths return a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(392): warning C4715: 'inserirGestor': not all control paths return a value
-C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(524): warning C4715: 'verificaGestor': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(247,4): warning C4013: 'gets' undefined; assuming extern returning int
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(815,42): warning C4047: 'function': 'Grafo' differs in levels of indirection from 'Adjacente *'
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(815,17): warning C4024: 'removerAresta': different types for formal and actual parameter 1
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(888,12): warning C4098: 'criarAresta': 'void' function returning a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(1792,4): warning C4033: 'encontrarCaminhoCircuitoMaisCurto' must return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(1693,1): warning C4047: 'initializing': 'Grafo' differs in levels of indirection from 'Grafo *'
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(1697,1): warning C4047: 'initializing': 'Grafo' differs in levels of indirection from 'Grafo *'
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(1730,1): warning C4047: 'initializing': 'Grafo' differs in levels of indirection from 'Grafo *'
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(1979,7): warning C4101: 'tipo': unreferenced local variable
+  main.c
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(45,3): warning C4013: 'gets' undefined; assuming extern returning int
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(153,12): warning C4098: 'menuprincipal': 'void' function returning a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(171,7): warning C4013: 'verificaGestor' undefined; assuming extern returning int
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(578,49): warning C4047: 'function': 'Grafo *' differs in levels of indirection from 'Grafo'
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(578,48): warning C4024: 'encontrarCaminhoCircuitoMaisCurto': different types for formal and actual parameter 1
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(596,12): warning C4098: 'menuprincipal': 'void' function returning a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\main.c(20,7): warning C4101: 'tipo': unreferenced local variable
+  Generating Code...
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(363): warning C4715: 'verificaCliente': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(338): warning C4715: 'inserirCliente': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(499): warning C4715: 'inserirGestor': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(660): warning C4715: 'verificaGestor': not all control paths return a value
+C:\C\EDA\Trabalho_Programacao\Trabalho_Programacao\fase1.c(1819): warning C4715: 'encontrarCaminhoCircuitoMaisCurto': not all control paths return a value
   Trabalho_Programacao.vcxproj -> C:\C\EDA\Trabalho_Programacao\x64\Debug\Trabalho_Programacao.exe

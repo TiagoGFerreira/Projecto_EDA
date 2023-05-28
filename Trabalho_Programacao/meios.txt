@@ -1,5 +1,5 @@
+5;bicicleta;100;15;36.40;garrar.rasgando.falava;0
+4;bicicleta;100;45;47.01;empregar.decorações.assando;0
+3;trotinete elétrica;100;50;300.00;empregar.decorações.assando;0
+2;bicicleta;70;70;45.60;vazar.rodeiam.esticando;0
 1;trotinete;100;67;300.00;empregar.decorações.assando;0
-2;bicicleta;40;70;45.60;vazar.rodeiam.esticando;1
-3;trotinete elétrica;20;50;300.00;empregar.decorações.assando;1
-4;bicicleta;56;45;47.01;empregar.decorações.assando;0
-5;bicicleta;13;15;36.40;garrar.rasgando.falava;1

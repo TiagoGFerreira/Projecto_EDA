@@ -1,129 +1,301 @@
 \hypertarget{lib_8h_source}{}\doxysection{lib.\+h}
-\mbox{\hyperlink{lib_8h}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
 \DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{comment}{//struct\ registoMeio\ ,\ armazena\ as\ informações\ do\ meio\ de\ mobilidade}}
-\DoxyCodeLine{00005\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_meio}{registoMeio}}\ \{}
-\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_meio_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
-\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_meio_a83e803286d86dd2f1dd877be52876eca}{tipodemobilidade}}[50];}
-\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_meio_af1db973f3c2465d305d89b8d1b433eae}{carga}};}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_meio_af343ecaa57ceda970f703b84a6cd75d3}{autonomia}};}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structregisto_meio_ac84a0a2333c2c7a6f130c3489d19a8b8}{custo}};}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_meio_a0c841d830e50b0120ef0e414c2657d39}{localizacao}}[50];}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_meio_aaeb2f13709b3ba18b28abd23bd510622}{aluguer}};}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ \mbox{\hyperlink{structregisto_meio_a51e4c86f161028f18db4a186ee6662bb}{seguinte}};\ \textcolor{comment}{//\ endereço de\ memória\ da\ struct\ registoMeio\ ,criando\ assim\ uma\ lista\ ligada\ onde\ cada\ elemento\ na\ lista\ contém um\ ponteiro\ para\ o\ próximo\ elemento}}
-\DoxyCodeLine{00014\ \}}
-\DoxyCodeLine{00015\ \mbox{\hyperlink{lib_8h_ac364e4a0444edd49149199514bc9dd4c}{Meio}};}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{comment}{//struct\ registoCliente\ ,\ armazena\ as\ informações\ do\ Cliente}}
-\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_cliente}{registoCliente}}\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_cliente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_cliente_ad9b32a94f9054fd81f59b1118b8d53d2}{nome}}[50];}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_cliente_aa8dd1ff392084190ae42d5fc47321b86}{morada}}[50];}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_cliente_ad5ea2e19b7deb827930edce70e13e3b8}{idade}};}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_cliente_ad68c6985dce5a3d709f854778dedee19}{nif}};}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_cliente_ad0cd39099d96e421a9dfe5bb7cbedc5a}{telemovel}};}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structregisto_cliente_a053787aa31e36d2305553048e761d7c4}{saldo}};}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_cliente_a66860a4081ffdd725177cc1293ac23c7}{password}}[50];}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ \mbox{\hyperlink{structregisto_cliente_a184e7f91205e3ad5120396e3574e6e49}{seguinte}};\ \textcolor{comment}{//\ endereço de\ memória\ da\ struct\ registoCliente\ ,criando\ assim\ uma\ lista\ ligada\ onde\ cada\ elemento\ na\ lista\ contém um\ ponteiro\ para\ o\ próximo\ elemento}}
-\DoxyCodeLine{00028\ \}}
-\DoxyCodeLine{00029\ \mbox{\hyperlink{lib_8h_a168ab9f677118480fdd4e7bbecbd756a}{Cliente}};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \textcolor{comment}{//struct\ registoGestor\ ,\ armazena\ as\ informações\ do\ Gestor}}
-\DoxyCodeLine{00032\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_gestor}{registoGestor}}\ \{}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_gestor_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_ad9b32a94f9054fd81f59b1118b8d53d2}{nome}}[50];}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_gestor_ad68c6985dce5a3d709f854778dedee19}{nif}};}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_gestor_ad0cd39099d96e421a9dfe5bb7cbedc5a}{telemovel}};}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_a66860a4081ffdd725177cc1293ac23c7}{password}}[50];}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_gestor}{registoGestor}}*\ \mbox{\hyperlink{structregisto_gestor_aa29e25d6350e5d9f69700605949f2708}{seguinte}};\ \textcolor{comment}{//\ endereço de\ memória\ da\ struct\ registoGestor\ ,criando\ assim\ uma\ lista\ ligada\ onde\ cada\ elemento\ na\ lista\ contém um\ ponteiro\ para\ o\ próximo\ elemento}}
-\DoxyCodeLine{00039\ \}}
-\DoxyCodeLine{00040\ \mbox{\hyperlink{lib_8h_a913ffd93c3f8511e6d3e874da6b5221a}{Gestor}};}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{comment}{//\ Inserção\ de\ um\ novo\ registo}}
-\DoxyCodeLine{00043\ \mbox{\hyperlink{structregisto_meio}{Meio}}*\ \mbox{\hyperlink{lib_8h_abb68a0e7ec68e659eb1992054349491e}{inserirMeio}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ tipo[],\ \textcolor{keywordtype}{int}\ carga,\ \textcolor{keywordtype}{int}\ autonomia,\ \textcolor{keywordtype}{float}\ custo,\ \textcolor{keywordtype}{char}\ localizacao[],\ \textcolor{keywordtype}{int}\ aluguer);}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \textcolor{comment}{//\ Printar\ o\ conteúdo da\ lista\ ligada}}
-\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a87feb05b64a61869d1c760806b221333}{listarMeios}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
+\DoxyCodeLine{00003\ \textcolor{comment}{//Esta\ estrutura\ Camiao\ representa\ o\ camiao\ que\ passa\ por\ todos\ os\ vertices\ do\ grafo\ e\ armazena\ o\ id\ do\ meio\ ,\ a\ estrutura\ meio\ e\ um\ apontador\ para\ o\ elemento\ seguinte}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_camiao}{Camiao}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ idMeio;}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ meio;}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_camiao}{Camiao}}*\ seguinte;}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \mbox{\hyperlink{struct_camiao}{Camiao}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{//Esta\ estrutura\ MeioGrafo\ representa\ os\ meios\ que\ tem\ vertice\ ,\ guardando\ o\ id\ do\ meio\ ,\ a\ estrutura\ meio\ e\ um\ apontador\ para\ o\ elemento\ seguinte}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_meio_grafo}{MeioGrafo}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ idMeio;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ meio;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_meio_grafo}{MeioGrafo}}*\ seguinte;}
+\DoxyCodeLine{00019\ \}*\mbox{\hyperlink{struct_meio_grafo}{Meios}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//Esta\ estrutura\ ClienteGrafo\ representa\ os\ clientes\ que\ tem\ vertice\ ,\ guardando\ o\ id\ do\ cliente\ ,\ a\ estrutura\ cliente\ e\ um\ apontador\ para\ o\ elemento\ seguinte}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_cliente_grafo}{ClienteGrafo}}}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ idCliente;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ cliente;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_cliente_grafo}{ClienteGrafo}}*\ seguinte;}
+\DoxyCodeLine{00027\ \}*\mbox{\hyperlink{struct_cliente_grafo}{Clientes}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//Esta\ estrutura\ reprsente\ os\ adjacentes\ dos\ vertices\ ,\ guardando\ o\ vertice\ de\ destino\ ,\ o\ peso\ da\ aresta\ e\ um\ apontador\ do\ adjacente\ seguinte}}
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_adjacente}{registoAdjacente}}}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{char}\ vertice[50];\ \ \ \textcolor{comment}{//\ geocódigo\ what3words}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{float}\ peso;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_adjacente}{registoAdjacente}}*\ seguinte;}
+\DoxyCodeLine{00035\ \}*\mbox{\hyperlink{structregisto_adjacente}{Adjacente}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{comment}{//Esta\ estrutura\ represente\ os\ vertices\ do\ grafo\ ,\ guardando\ o\ vertice\ ,\ um\ apontador\ para\ a\ estrutura\ Adjacente\ ,\ ClienteGrafo\ e\ MeioGrafo\ e\ um\ apontador\ para\ o\ proximo\ vertice}}
+\DoxyCodeLine{00038\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_grafo}{registoGrafo}}}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{char}\ vertice[50];\ \ \ \textcolor{comment}{//\ geocódigo\ what3words}}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{structregisto_adjacente}{Adjacente}}\ adjacentes;}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{struct_cliente_grafo}{Clientes}}\ cliente;}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{struct_meio_grafo}{Meios}}\ meio;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ neste\ geocódigo}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_grafo}{registoGrafo}}*\ seguinte;}
+\DoxyCodeLine{00046\ \}*\mbox{\hyperlink{structregisto_grafo}{Grafo}};}
 \DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \textcolor{comment}{//\ Determinar\ existência\ do\ id\ na\ lista\ ligada\ 'inicio'}}
-\DoxyCodeLine{00049\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lib_8h_a629b040130e6146c98cbae5cdbc73bee}{existeMeio}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{comment}{//\ Remover\ um\ meio\ a\ partir\ do\ seu\ id}}
-\DoxyCodeLine{00052\ \mbox{\hyperlink{structregisto_meio}{Meio}}*\ \mbox{\hyperlink{lib_8h_aefe0bc9f4fb01f2285978a74b6a51b08}{removerMeio}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \textcolor{comment}{//guardar\ a\ informação\ do\ ficheiro\ meios.txt\ como\ variaveis\ e\ inserir\ na\ lista\ ligada\ }}
-\DoxyCodeLine{00055\ \mbox{\hyperlink{structregisto_meio}{Meio}}*\ \mbox{\hyperlink{lib_8h_aacbc0a630143b0ef88459e973a6bfbe5}{lerMeios}}();}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \textcolor{comment}{//Lista\ todos\ os\ meios\ em\ que\ a\ variavel\ aluguer\ encontra-\/se\ a\ 0\ ,\ ou\ seja\ disponiveis\ para\ alugar}}
-\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a7c164c710792c09b21f68160060830a2}{MeiosParaAlugar}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \textcolor{comment}{//muda\ a\ variavel\ aluguer\ da\ lista\ ligada\ para\ 1\ do\ id\ inserido\ ,\ mudando\ o\ seu\ estado\ para\ alugado}}
-\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a5251ff71dc5ec2c142975fbffe009b6a}{AlugarMeios}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ \textcolor{comment}{//muda\ a\ variavel\ aluguer\ da\ lista\ ligada\ para\ 0\ do\ id\ inserido\ ,\ mudando\ o\ seu\ estado\ para\ alugado}}
-\DoxyCodeLine{00064\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a76a7b80a5c72bad7705f6c3ced01cf1f}{DesalugarMeios}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \textcolor{comment}{//pede\ novamente\ as\ informações\ e\ atualizas\ na\ memória}}
-\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a5b6eacfaf9bfe7d87b060f26669ea9e1}{editarMeios}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \textcolor{comment}{//Guarda\ todas\ as\ informações\ da\ lista\ ligada\ no\ ficheiro\ meios.txt}}
-\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a8925eb524947efc6f7d745561a4c0d9f}{guardarMeios}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
-\DoxyCodeLine{00071\ }
-\DoxyCodeLine{00072\ \textcolor{comment}{//guardar\ a\ informação\ do\ ficheiro\ clientes.txt\ como\ variaveis\ e\ inserir\ na\ lista\ ligada\ }}
-\DoxyCodeLine{00073\ \mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ \mbox{\hyperlink{lib_8h_a1ef36cc03ed3cbe9b1fc5f4681692a7d}{lerCliente}}();}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \textcolor{comment}{//Inserção\ de\ um\ novo\ registo}}
-\DoxyCodeLine{00076\ \mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ \mbox{\hyperlink{lib_8h_a139813ff3443d29e359389d4165a9ea7}{inserirCliente}}(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_ad9b32a94f9054fd81f59b1118b8d53d2}{nome}}[],\ \textcolor{keywordtype}{char}\ mor[],\ \textcolor{keywordtype}{int}\ ida,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structregisto_gestor_ad68c6985dce5a3d709f854778dedee19}{nif}},\ \textcolor{keywordtype}{int}\ tele,\ \textcolor{keywordtype}{float}\ saldo,\ \textcolor{keywordtype}{char}\ pass[]);}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \textcolor{comment}{//\ Printar\ o\ conteúdo da\ lista\ ligada}}
-\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_afe34e6c914fcde548a85bc5467081105}{listarCliente}}(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio);}
-\DoxyCodeLine{00080\ }
-\DoxyCodeLine{00081\ \textcolor{comment}{//\ Determinar\ existência\ do\ id\ na\ lista\ ligada\ 'inicio'}}
-\DoxyCodeLine{00082\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lib_8h_a0085758bea8a2c0c1aa749ff416461b7}{existeCliente}}(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \textcolor{comment}{//vai\ verificar\ se\ o\ id\ inserido\ existe\ na\ lista\ ligada\ ,\ e\ compara\ a\ string\ nome\ e\ password\ com\ as\ existe\ na\ struct\ desse\ id}}
-\DoxyCodeLine{00085\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lib_8h_adfe2b227466fb69a886a57630f750dba}{verificaCliente}}(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_ad9b32a94f9054fd81f59b1118b8d53d2}{nome}}[],\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_a66860a4081ffdd725177cc1293ac23c7}{password}}[]);}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00087\ \textcolor{comment}{//\ Remover\ um\ cliente\ a\ partir\ do\ seu\ id}}
-\DoxyCodeLine{00088\ \mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ \mbox{\hyperlink{lib_8h_abde82748ecdc17a64062e4f34076ec48}{removerCliente}}(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00048\ \textcolor{comment}{//Estrutura\ Caminho\ que\ guarda\ cada\ caminho\ que\ o\ vertice\ passa\ para\ encontrar\ o\ caminho\ mais\ curto\ ,\ guardando\ o\ vertice\ ,\ a\ distancia\ e\ o\ proximo\ elemento}}
+\DoxyCodeLine{00049\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_caminho}{Caminho}}}
+\DoxyCodeLine{00050\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{char}\ vertice[50];}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ distancia;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_caminho}{Caminho}}*\ proximo;}
+\DoxyCodeLine{00054\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \mbox{\hyperlink{struct_caminho}{Caminho}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{comment}{//struct\ registoMeio,\ armazena\ as\ informações\ do\ meio\ de\ mobilidade}}
+\DoxyCodeLine{00059\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_meio}{registoMeio}}}
+\DoxyCodeLine{00060\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{char}\ tipodemobilidade[50];}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ carga;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ autonomia;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{float}\ custo;}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{char}\ localizacao[50];}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ aluguer;}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ seguinte;\ \ \ \ \textcolor{comment}{//\ endereço de\ memória\ da\ struct\ registoMeio\ ,criando\ assim\ uma\ lista\ ligada\ onde\ cada\ elemento\ na\ lista\ contém um\ ponteiro\ para\ o\ próximo\ elemento}}
+\DoxyCodeLine{00069\ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \mbox{\hyperlink{structregisto_meio}{Meio}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{comment}{//struct\ registoCliente,\ armazena\ as\ informações\ do\ Cliente}}
+\DoxyCodeLine{00074\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_cliente}{registoCliente}}}
+\DoxyCodeLine{00075\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[50];}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{char}\ morada[50];}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ idade;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ nif;}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ telemovel;}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{float}\ saldo;}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{char}\ password[50];}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{char}\ localizacao[50];}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ seguinte;\ \ \textcolor{comment}{//\ endereço de\ memória\ da\ struct\ registoCliente\ ,criando\ assim\ uma\ lista\ ligada\ onde\ cada\ elemento\ na\ lista\ contém um\ ponteiro\ para\ o\ próximo\ elemento}}
+\DoxyCodeLine{00086\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \mbox{\hyperlink{structregisto_cliente}{Cliente}};}
 \DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \textcolor{comment}{//pede\ novamente\ as\ informações\ e\ atualizas\ na\ memória}}
-\DoxyCodeLine{00091\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a8c17ed410f0446aeae4918fabf27c6c1}{editarCliente}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \textcolor{comment}{//Guarda\ todas\ as\ informações\ da\ lista\ ligada\ no\ ficheiro\ clientes.txt}}
-\DoxyCodeLine{00094\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a71476a953df760aa18658438e51c1772}{guardarClientes}}(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio);}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00096\ \textcolor{comment}{//Inserção\ de\ um\ novo\ registo}}
-\DoxyCodeLine{00097\ \mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ \mbox{\hyperlink{lib_8h_af8c0ef4388086155e4c428a22cac6e19}{inserirGestor}}(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_ad9b32a94f9054fd81f59b1118b8d53d2}{nome}}[],\ \textcolor{keywordtype}{int}\ contribuinte,\ \textcolor{keywordtype}{int}\ tele,\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_a66860a4081ffdd725177cc1293ac23c7}{password}}[]);}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ \textcolor{comment}{//guardar\ a\ informação\ do\ ficheiro\ clientes.txt\ como\ variaveis\ e\ inserir\ na\ lista\ ligada\ }}
-\DoxyCodeLine{00100\ \mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ \mbox{\hyperlink{lib_8h_a006b1bfe5f29a018b5e0a450a0ad7ea8}{lerGestor}}();}
-\DoxyCodeLine{00101\ }
-\DoxyCodeLine{00102\ \textcolor{comment}{//\ Printar\ o\ conteúdo da\ lista\ ligada}}
-\DoxyCodeLine{00103\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a2426c3179d14bffb189605face86aafc}{listarGestor}}(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio);}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00105\ \textcolor{comment}{//\ Determinar\ existência\ do\ id\ na\ lista\ ligada\ 'inicio'}}
-\DoxyCodeLine{00106\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lib_8h_aff4625d37fffde8f6897a810ef16fec6}{existeGestor}}(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00107\ }
-\DoxyCodeLine{00108\ \textcolor{comment}{//\ Remover\ um\ gestor\ a\ partir\ do\ seu\ id}}
-\DoxyCodeLine{00109\ \mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ \mbox{\hyperlink{lib_8h_a0eec00437ca8a857e4b60850fd4d1b4d}{removerGestor}}(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00111\ \textcolor{comment}{//pede\ novamente\ as\ informações\ e\ atualizas\ na\ memória}}
-\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_af84f716dd128df5ce45e1b3fea3bc426}{editarGestor}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_gestor}{registoGestor}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00113\ }
-\DoxyCodeLine{00114\ \textcolor{comment}{//Guarda\ todas\ as\ informações\ da\ lista\ ligada\ no\ ficheiro\ gestores.txt}}
-\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a39c063936162035da44af5ace075ff3f}{guardarGestores}}(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio);}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00117\ \textcolor{comment}{//vai\ verificar\ se\ o\ id\ inserido\ existe\ na\ lista\ ligada\ ,\ e\ compara\ a\ string\ nome\ e\ password\ com\ as\ existe\ na\ struct\ desse\ id}}
-\DoxyCodeLine{00118\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lib_8h_ab7da02a7f9d0d965ec47a37ecf850816}{verificaGestor}}(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_ad9b32a94f9054fd81f59b1118b8d53d2}{nome}}[],\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structregisto_gestor_a66860a4081ffdd725177cc1293ac23c7}{password}}[]);}
-\DoxyCodeLine{00119\ }
-\DoxyCodeLine{00120\ \textcolor{comment}{//lista\ os\ meios\ por\ ordem\ decrescente\ de\ autonomia}}
-\DoxyCodeLine{00121\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a28e682234de69bbfe40d6830704af895}{listarMeiosPorAutonomia}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
-\DoxyCodeLine{00122\ }
-\DoxyCodeLine{00123\ \textcolor{comment}{//compara\ a\ localização\ inserida\ com\ as\ existentes\ na\ lista\ e\ se\ houver\ iguais\ imprimes\ as\ informações\ desse\ meio}}
-\DoxyCodeLine{00124\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lib_8h_a3cee146a0843828fa9c775441ae9e1d6}{verificaLocalizacao}}(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{char}\ localizacao[]);}
+\DoxyCodeLine{00090\ \textcolor{comment}{//struct\ registoGestor,\ armazena\ as\ informações\ do\ Gestor}}
+\DoxyCodeLine{00091\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_gestor}{registoGestor}}}
+\DoxyCodeLine{00092\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[50];}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{int}\ nif;}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{int}\ telemovel;}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{char}\ password[50];}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto_gestor}{registoGestor}}*\ seguinte;\ \ \ \ \textcolor{comment}{//\ endereço de\ memória\ da\ struct\ registoGestor\ ,criando\ assim\ uma\ lista\ ligada\ onde\ cada\ elemento\ na\ lista\ contém um\ ponteiro\ para\ o\ próximo\ elemento}}
+\DoxyCodeLine{00099\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \mbox{\hyperlink{structregisto_gestor}{Gestor}};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{comment}{//\ Inserção\ de\ um\ novo\ registo\ de\ meio\ de\ mobilidade\ na\ lista\ ligada}}
+\DoxyCodeLine{00104\ \mbox{\hyperlink{structregisto_meio}{Meio}}*\ inserirMeio(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ tipo[],\ \textcolor{keywordtype}{int}\ carga,\ \textcolor{keywordtype}{int}\ autonomia,\ \textcolor{keywordtype}{float}\ custo,\ \textcolor{keywordtype}{char}\ localizacao[],\ \textcolor{keywordtype}{int}\ aluguer);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{comment}{//\ Printar\ o\ conteúdo da\ lista\ ligada\ de\ meios\ de\ mobilidade}}
+\DoxyCodeLine{00107\ \textcolor{keywordtype}{void}\ listarMeios(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{comment}{//\ Verificar\ se\ um\ meio\ de\ mobilidade\ com\ o\ ID\ especificado\ existe\ na\ lista\ ligada}}
+\DoxyCodeLine{00110\ \textcolor{keywordtype}{int}\ existeMeio(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{comment}{//\ Remover\ um\ meio\ de\ mobilidade\ da\ lista\ ligada\ a\ partir\ do\ ID\ especificado}}
+\DoxyCodeLine{00113\ \mbox{\hyperlink{structregisto_meio}{Meio}}*\ removerMeio(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{comment}{//\ Ler\ as\ informações\ dos\ meios\ de\ mobilidade\ a\ partir\ do\ arquivo\ "{}meios.txt"{}\ e\ criar\ a\ lista\ ligada}}
+\DoxyCodeLine{00116\ \mbox{\hyperlink{structregisto_meio}{Meio}}*\ lerMeios();}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{comment}{//\ Listar\ todos\ os\ meios\ de\ mobilidade\ disponíveis\ para\ aluguel\ (aluguer\ =\ 0)}}
+\DoxyCodeLine{00119\ \textcolor{keywordtype}{void}\ MeiosParaAlugar(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \textcolor{comment}{//\ Alterar\ a\ variável\ "{}aluguer"{}\ de\ um\ meio\ de\ mobilidade\ para\ 1,\ indicando\ que\ está alugado}}
+\DoxyCodeLine{00122\ \textcolor{keywordtype}{void}\ AlugarMeios(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{comment}{//\ Alterar\ a\ variável\ "{}aluguer"{}\ de\ um\ meio\ de\ mobilidade\ para\ 0,\ indicando\ que\ está disponível\ para\ aluguel}}
+\DoxyCodeLine{00125\ \textcolor{keywordtype}{void}\ DesalugarMeios(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{comment}{//\ Pedir\ novamente\ as\ informações\ do\ meio\ de\ mobilidade\ com\ o\ ID\ especificado\ e\ atualizar\ na\ memória}}
+\DoxyCodeLine{00128\ \textcolor{keywordtype}{void}\ editarMeios(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{comment}{//\ Guardar\ todas\ as\ informações\ da\ lista\ ligada\ de\ meios\ de\ mobilidade\ no\ arquivo\ "{}meios.txt"{}}}
+\DoxyCodeLine{00131\ \textcolor{keywordtype}{void}\ guardarMeios(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{comment}{//\ Ler\ as\ informações\ dos\ clientes\ a\ partir\ do\ arquivo\ "{}clientes.txt"{}\ e\ criar\ a\ lista\ ligada}}
+\DoxyCodeLine{00134\ \mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ lerCliente();}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{comment}{//\ Inserção\ de\ um\ novo\ registo\ de\ cliente\ na\ lista\ ligada}}
+\DoxyCodeLine{00137\ \mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inserirCliente(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ nome[],\ \textcolor{keywordtype}{char}\ mor[],\ \textcolor{keywordtype}{int}\ ida,\ \textcolor{keywordtype}{int}\ nif,\ \textcolor{keywordtype}{int}\ tele,\ \textcolor{keywordtype}{float}\ saldo,\ \textcolor{keywordtype}{char}\ pass[]);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{comment}{//\ Printar\ o\ conteúdo da\ lista\ ligada\ de\ clientes}}
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ listarCliente(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \textcolor{comment}{//\ Verificar\ se\ um\ cliente\ com\ o\ ID\ especificado\ existe\ na\ lista\ ligada}}
+\DoxyCodeLine{00143\ \textcolor{keywordtype}{int}\ existeCliente(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{comment}{//\ Verificar\ se\ o\ ID,\ nome\ e\ senha\ fornecidos\ correspondem\ a\ um\ cliente\ na\ lista\ ligada}}
+\DoxyCodeLine{00146\ \textcolor{keywordtype}{int}\ verificaCliente(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ nome[],\ \textcolor{keywordtype}{char}\ password[]);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{comment}{//\ Remover\ um\ cliente\ da\ lista\ ligada\ a\ partir\ do\ ID\ especificado}}
+\DoxyCodeLine{00149\ \mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ removerCliente(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \textcolor{comment}{//\ Pedir\ novamente\ as\ informações\ do\ cliente\ com\ o\ ID\ especificado\ e\ atualizar\ na\ memória}}
+\DoxyCodeLine{00152\ \textcolor{keywordtype}{void}\ editarCliente(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \textcolor{comment}{//\ Guardar\ todas\ as\ informações\ da\ lista\ ligada\ de\ clientes\ no\ arquivo\ "{}clientes.txt"{}}}
+\DoxyCodeLine{00155\ \textcolor{keywordtype}{void}\ guardarClientes(\mbox{\hyperlink{structregisto_cliente}{Cliente}}*\ inicio);}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{comment}{//\ Inserção\ de\ um\ novo\ registo\ de\ gestor\ na\ lista\ ligada}}
+\DoxyCodeLine{00158\ \mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inserirGestor(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ nome[],\ \textcolor{keywordtype}{int}\ contribuinte,\ \textcolor{keywordtype}{int}\ tele,\ \textcolor{keywordtype}{char}\ password[]);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \textcolor{comment}{//\ Ler\ as\ informações\ dos\ gestores\ a\ partir\ do\ arquivo\ "{}gestores.txt"{}\ e\ criar\ a\ lista\ ligada}}
+\DoxyCodeLine{00161\ \mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ lerGestor();}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{comment}{//\ Printar\ o\ conteúdo da\ lista\ ligada\ de\ gestores}}
+\DoxyCodeLine{00164\ \textcolor{keywordtype}{void}\ listarGestor(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \textcolor{comment}{//\ Verificar\ se\ um\ gestor\ com\ o\ ID\ especificado\ existe\ na\ lista\ ligada}}
+\DoxyCodeLine{00167\ \textcolor{keywordtype}{int}\ existeGestor(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{comment}{//\ Remover\ um\ gestor\ da\ lista\ ligada\ a\ partir\ do\ ID\ especificado}}
+\DoxyCodeLine{00170\ \mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ removerGestor(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \textcolor{comment}{//\ Pedir\ novamente\ as\ informações\ do\ gestor\ com\ o\ ID\ especificado\ e\ atualizar\ na\ memória}}
+\DoxyCodeLine{00173\ \textcolor{keywordtype}{void}\ editarGestor(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_gestor}{registoGestor}}*\ lista,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \textcolor{comment}{//\ Guardar\ todas\ as\ informações\ da\ lista\ ligada\ de\ gestores\ no\ arquivo\ "{}gestores.txt"{}}}
+\DoxyCodeLine{00176\ \textcolor{keywordtype}{void}\ guardarGestores(\mbox{\hyperlink{structregisto_gestor}{Gestor}}*\ inicio);}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{comment}{//\ Listar\ os\ meios\ de\ mobilidade\ por\ ordem\ decrescente\ de\ autonomia}}
+\DoxyCodeLine{00179\ \textcolor{keywordtype}{void}\ listarMeiosPorAutonomia(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{comment}{//\ Verificar\ se\ a\ localização\ especificada\ existe\ na\ lista\ de\ meios\ de\ mobilidade\ e\ imprimir\ suas\ informações}}
+\DoxyCodeLine{00182\ \textcolor{keywordtype}{void}\ verificaLocalizacao(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \textcolor{keywordtype}{char}\ localizacao[]);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{comment}{//\ Criar\ um\ novo\ vértice\ no\ grafo}}
+\DoxyCodeLine{00185\ \mbox{\hyperlink{structregisto_grafo}{Grafo}}\ criarVertice(\mbox{\hyperlink{structregisto_grafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{comment}{//\ Verificar\ se\ um\ vértice\ já existe\ no\ grafo}}
+\DoxyCodeLine{00188\ \textcolor{keywordtype}{int}\ existeVertice(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \textcolor{comment}{//\ Remover\ um\ vértice\ do\ grafo}}
+\DoxyCodeLine{00191\ \textcolor{keywordtype}{void}\ removerVertice(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ grafo,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \textcolor{comment}{//\ Remover\ uma\ aresta\ do\ grafo}}
+\DoxyCodeLine{00194\ \textcolor{keywordtype}{void}\ removerAresta(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \textcolor{comment}{//\ Listar\ todos\ os\ vértices\ do\ grafo}}
+\DoxyCodeLine{00197\ \textcolor{keywordtype}{void}\ listarVertices(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \textcolor{comment}{//\ Criar\ uma\ aresta\ entre\ dois\ vértices\ no\ grafo\ com\ um\ peso\ especificado}}
+\DoxyCodeLine{00200\ \textcolor{keywordtype}{void}\ criarAresta(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vOrigem[],\ \textcolor{keywordtype}{char}\ vDestino[],\ \textcolor{keywordtype}{float}\ peso);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \textcolor{comment}{//\ Verificar\ se\ uma\ aresta\ existe\ entre\ dois\ vértices\ no\ grafo}}
+\DoxyCodeLine{00203\ \textcolor{keywordtype}{int}\ existeAresta(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vOrigem[],\ \textcolor{keywordtype}{char}\ vDestino[]);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \textcolor{comment}{//\ Listar\ os\ vértices\ adjacentes\ a\ um\ vértice\ específico\ no\ grafo}}
+\DoxyCodeLine{00206\ \textcolor{keywordtype}{void}\ listarAdjacentes(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \textcolor{comment}{//\ Inserir\ um\ novo\ meio\ de\ mobilidade\ no\ grafo\ com\ base\ em\ um\ vértice\ existente}}
+\DoxyCodeLine{00209\ \textcolor{keywordtype}{int}\ inserirMeioV2(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista,\ \textcolor{keywordtype}{char}\ geocodigo[],\ \textcolor{keywordtype}{int}\ codigoMeio);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \textcolor{comment}{//\ Listar\ os\ meios\ de\ mobilidade\ presentes\ no\ grafo}}
+\DoxyCodeLine{00212\ \textcolor{keywordtype}{void}\ listarMeiosnoGrafo(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \textcolor{comment}{//\ Inserir\ um\ novo\ cliente\ no\ grafo\ com\ base\ em\ um\ vértice\ existente}}
+\DoxyCodeLine{00215\ \textcolor{keywordtype}{int}\ inserirClienteV2(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ lista,\ \textcolor{keywordtype}{char}\ geocodigo[],\ \textcolor{keywordtype}{int}\ codigoCliente);}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \textcolor{comment}{//\ Listar\ os\ clientes\ presentes\ no\ grafo}}
+\DoxyCodeLine{00218\ \textcolor{keywordtype}{void}\ listarClientesnoGrafo(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{comment}{//\ Guardar\ os\ vértices\ do\ grafo\ no\ arquivo\ "{}vertices.txt"{}}}
+\DoxyCodeLine{00221\ \textcolor{keywordtype}{void}\ guardarVertices(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{comment}{//\ Guardar\ as\ informações\ de\ adjacência\ do\ grafo\ no\ arquivo\ "{}adjacentes.txt"{}}}
+\DoxyCodeLine{00224\ \textcolor{keywordtype}{void}\ guardarAdjacentes(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \textcolor{comment}{//\ Guardar\ as\ informações\ dos\ meios\ de\ mobilidade\ no\ grafo\ no\ arquivo\ "{}meiografo.txt"{}}}
+\DoxyCodeLine{00227\ \textcolor{keywordtype}{void}\ guardarMeioGrafo(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \textcolor{comment}{//\ Guardar\ as\ informações\ dos\ clientes\ no\ grafo\ no\ arquivo\ "{}clientegrafo.txt"{}}}
+\DoxyCodeLine{00230\ \textcolor{keywordtype}{void}\ guardarClienteGrafo(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \textcolor{comment}{//\ Guardar\ todas\ as\ informações\ do\ grafo\ nos\ arquivos\ correspondentes}}
+\DoxyCodeLine{00233\ \textcolor{keywordtype}{void}\ guardarGrafo(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \textcolor{comment}{//\ Ler\ os\ vértices\ do\ grafo\ a\ partir\ do\ arquivo\ "{}vertices.txt"{}}}
+\DoxyCodeLine{00236\ \mbox{\hyperlink{structregisto_grafo}{Grafo}}\ lerVertices(\mbox{\hyperlink{structregisto_grafo}{Grafo}}*\ g);}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ \textcolor{comment}{//\ Ler\ as\ informações\ de\ adjacência\ do\ grafo\ a\ partir\ do\ arquivo\ "{}adjacentes.txt"{}}}
+\DoxyCodeLine{00239\ \textcolor{keywordtype}{void}\ lerAdjacentes(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g);}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \textcolor{comment}{//\ Ler\ as\ informações\ dos\ meios\ de\ mobilidade\ do\ grafo\ a\ partir\ do\ arquivo\ "{}meiografo.txt"{}}}
+\DoxyCodeLine{00242\ \mbox{\hyperlink{structregisto_grafo}{Grafo}}\ lerMeioGrafo(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ lista);}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \textcolor{comment}{//\ Ler\ as\ informações\ dos\ clientes\ do\ grafo\ a\ partir\ do\ arquivo\ "{}clientegrafo.txt"{}}}
+\DoxyCodeLine{00245\ \mbox{\hyperlink{structregisto_grafo}{Grafo}}\ lerClienteGrafo(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ lista);}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \textcolor{comment}{//\ Ler\ todas\ as\ informações\ do\ grafo\ a\ partir\ dos\ arquivos\ correspondentes}}
+\DoxyCodeLine{00248\ \mbox{\hyperlink{structregisto_grafo}{Grafo}}\ lerGrafo(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ meio,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_cliente}{registoCliente}}*\ cliente);}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \textcolor{comment}{//\ Verificar\ se\ um\ vértice\ existe\ na\ lista\ de\ clientes\ no\ grafo}}
+\DoxyCodeLine{00251\ \textcolor{keywordtype}{int}\ existeVerticenoCliente(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \textcolor{comment}{//\ Atualizar\ o\ vértice\ de\ um\ cliente\ no\ grafo\ com\ base\ no\ ID\ do\ cliente}}
+\DoxyCodeLine{00254\ \textcolor{keywordtype}{void}\ atualizarCliente(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{int}\ idCliente,\ \textcolor{keywordtype}{char}\ novoVertice[]);}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00256\ \textcolor{comment}{//\ Atualizar\ o\ vértice\ de\ um\ meio\ de\ mobilidade\ no\ grafo\ com\ base\ no\ ID\ do\ meio}}
+\DoxyCodeLine{00257\ \textcolor{keywordtype}{void}\ atualizarMeio(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{int}\ idMeio,\ \textcolor{keywordtype}{char}\ novoVertice[]);}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \textcolor{comment}{//\ Buscar\ os\ caminhos\ mais\ curtos\ a\ partir\ de\ um\ vértice\ inicial\ dentro\ de\ um\ determinado\ raio\ usando\ determinados\ meios\ de\ mobilidade}}
+\DoxyCodeLine{00260\ \textcolor{keywordtype}{void}\ buscarCaminhosMaisCurto(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ verticeInicial[],\ \textcolor{keywordtype}{float}\ raio,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ meios,\ \textcolor{keywordtype}{char}\ meio[]);}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ \textcolor{comment}{//\ Remover\ todos\ os\ caminhos\ da\ estrutura\ de\ dados\ Caminho}}
+\DoxyCodeLine{00263\ \textcolor{keywordtype}{void}\ removerCaminho(\mbox{\hyperlink{struct_caminho}{Caminho}}**\ caminhos);}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \textcolor{comment}{//\ Inserir\ um\ novo\ caminho\ na\ estrutura\ de\ dados\ Caminho}}
+\DoxyCodeLine{00266\ \textcolor{keywordtype}{void}\ inserirCaminho(\mbox{\hyperlink{struct_caminho}{Caminho}}**\ caminhos,\ \textcolor{keywordtype}{char}\ vertice[],\ \textcolor{keywordtype}{float}\ distancia);}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ \textcolor{comment}{//\ Verificar\ se\ um\ meio\ de\ mobilidade\ está disponível\ no\ vértice\ especificado}}
+\DoxyCodeLine{00269\ \textcolor{keywordtype}{int}\ VerificarMeio(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00271\ \textcolor{comment}{//\ Buscar\ o\ ID\ do\ meio\ de\ mobilidade\ com\ base\ no\ vértice\ especificado}}
+\DoxyCodeLine{00272\ \textcolor{keywordtype}{int}\ buscarIDMeioPorVertice(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{char}\ vertice[]);}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ \textcolor{comment}{//\ Buscar\ um\ meio\ de\ mobilidade\ pelo\ seu\ ID\ na\ lista\ de\ meios\ de\ mobilidade}}
+\DoxyCodeLine{00275\ \mbox{\hyperlink{structregisto_meio}{Meio}}*\ buscarMeioPorID(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ meios,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00277\ \textcolor{comment}{//\ Repor\ os\ meios\ de\ mobilidade\ disponíveis\ no\ grafo\ com\ base\ na\ lista\ ligada\ de\ meios\ de\ mobilidade}}
+\DoxyCodeLine{00278\ \textcolor{keywordtype}{void}\ reporMeios(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ inicio,\ \mbox{\hyperlink{struct_camiao}{Camiao}}*\ atual);}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \textcolor{comment}{//\ Verificar\ se\ um\ meio\ de\ mobilidade\ está recolhido\ em\ um\ camião específico\ com\ base\ no\ ID\ do\ meio}}
+\DoxyCodeLine{00281\ \textcolor{keywordtype}{int}\ verificarMeioRecolhido(\textcolor{keyword}{struct}\ \mbox{\hyperlink{struct_camiao}{Camiao}}*\ camiao,\ \textcolor{keywordtype}{int}\ idMeio);}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \textcolor{comment}{//\ Encontrar\ o\ caminho\ mais\ curto\ para\ percorrer\ um\ circuito\ que\ retorna\ ao\ vértice\ inicial,\ levando\ em\ conta\ os\ meios\ de\ mobilidade\ disponíveis}}
+\DoxyCodeLine{00284\ \mbox{\hyperlink{struct_camiao}{Camiao}}*\ encontrarCaminhoCircuitoMaisCurto(\mbox{\hyperlink{structregisto_grafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{char}\ verticeInicial[],\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ meios,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{struct_camiao}{Camiao}}*\ camiao);}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ \textcolor{comment}{//\ Inserir\ um\ meio\ de\ mobilidade\ em\ um\ camião}}
+\DoxyCodeLine{00287\ \mbox{\hyperlink{struct_camiao}{Camiao}}*\ inserirMeionoCamiao(\mbox{\hyperlink{struct_camiao}{Camiao}}*\ inicio,\ \textcolor{keywordtype}{int}\ idMeio,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structregisto_meio}{registoMeio}}*\ meio);}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00289\ \textcolor{comment}{//\ Obter\ o\ vértice\ correspondente\ ao\ ID\ do\ cliente\ no\ grafo}}
+\DoxyCodeLine{00290\ \textcolor{keywordtype}{char}*\ obterVerticePorIDCliente(\mbox{\hyperlink{structregisto_grafo}{Grafo}}\ g,\ \textcolor{keywordtype}{int}\ idCliente);}
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00292\ \textcolor{comment}{//\ Guardar\ as\ informações\ do\ camião na\ estrutura\ de\ dados}}
+\DoxyCodeLine{00293\ \textcolor{keywordtype}{void}\ guardarCamiao(\mbox{\hyperlink{struct_camiao}{Camiao}}*\ camiao);}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00295\ \textcolor{comment}{//Lê as\ informações\ dentro\ do\ ficheiro\ camiao\ e\ insere\ na\ estrutura}}
+\DoxyCodeLine{00296\ \mbox{\hyperlink{struct_camiao}{Camiao}}*\ LerCamiao(\mbox{\hyperlink{structregisto_meio}{Meio}}*\ meios);}
 
 \end{DoxyCode}
